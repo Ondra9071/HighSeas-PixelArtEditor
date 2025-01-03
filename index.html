@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art Editor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center py-8">
+  <h1 class="text-4xl font-bold mb-6">🎨 Pixel Art Editor</h1>
+  
+  <div class="flex flex-wrap items-center gap-4 mb-6">
+    <div id="colorPalette" class="flex gap-2"></div>
+
+    <div class="flex items-center gap-2">
+      <label for="hexInput" class="text-sm">
+        <i class="fas fa-hashtag"></i>
+      </label>
+      <input type="text" id="hexInput" maxlength="7" placeholder="#000000" class="w-24 p-2 text-gray-900 rounded-md">
+      <button id="setHexColor" class="px-3 py-2 bg-blue-600 hover:bg-blue-500 rounded-md">
+        <i class="fas fa-check"></i>
+      </button>
+    </div>
+
+    <input type="color" id="colorPicker" class="w-10 h-10 cursor-pointer border border-gray-700 rounded-md">
+    
+    <button id="clearButton" class="px-4 py-2 bg-red-600 hover:bg-red-500 rounded-lg">
+      <i class="fas fa-trash-alt"></i>
+    </button>
+    <button id="saveButton" class="px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg">
+      <i class="fas fa-save"></i>
+    </button>
+  </div>
+
+  <div id="canvas" class="grid bg-gray-800 rounded-md shadow-md w-full max-w-[40vw] h-[40vw]"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
