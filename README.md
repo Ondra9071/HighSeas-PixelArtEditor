@@ -1,7 +1,7 @@
 # High Seas: Pixel Art Editor! 🎨
 
 Simple, but very nice pixel art editor made with **HTML**, **JS** and **Tailwind CSS** only! <br><br>
-**I set a goal to do it in the most basic technology possible, which I think I accomplished.**
+**I set a goal to do it in the most basic technologies possible, which I think I accomplished.**
 
 **Demo:** [Here](https://ondrejpacovsky.cz/demo/highseas/PixelArtEditor/index.html)
 
